@@ -1,1 +1,1 @@
-[victormerckle.fr](victormerckle.fr)
+[victormerckle.fr](http://www.victormerckle.fr)
