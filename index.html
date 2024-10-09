@@ -6,10 +6,136 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Meilleure page</title>
-<link rel="stylesheet" href="nostyle.css">
+	<!-- <link rel="stylesheet" href="nostyle.css"> DECOY CSS --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #fffff0;
+            margin: 0;
+            padding: 20px;
+        }
+		.box-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-grow: 1;
+		}
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .content-box p {
+            color: #555;
+            margin-bottom: 30px;
+            max-width: 800px;
+        }
+        .content-boxx p {
+            color: #555;
+            margin-bottom: -50px;
+            margin-left: 50px;
+            max-width: 800px;
+        }
+        .content-box {
+            display: flex;
+            align-items: center;
+            background-color: #fff7f3;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+        .content-boxx {
+            display: flex;
+            align-items: center;
+            max-width: 800px;
+            width: 100%;
+        }
+        .content-box img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .content-box .text {
+            max-width: 600px;
+        }
+        .content-box a {
+            color: #7b0045;
+            text-decoration: none;
+        }
+        .content-box a:hover {
+            text-decoration: underline;
+        }
+        .content-box h2 {
+            margin: 0;
+            color: #7b0045;
+        }
+        .content-box p {
+            margin: 10px 0 0;
+        }
+    </style>
 </head>
 
 <body>
-	En construction. copyright 2011-2013 (c)
-</body>
-</html> 
+<div class="box-container">
+    <div class="content-boxx">
+	<h1>Victor Mercklé</h1>
+
+	<p>PhD Student @ Grenoble<br />
+	<a href="https://www.linkedin.com/in/vmerckle">LinkedIn</a><br />
+	<a href="https://github.com/vmerckle">GitHub</a>
+	</p>
+    </div>
+</div>
+
+	<p><br /></p>
+
+<div class="box-container">
+	<div class="content-box">
+        <img src="first.png" alt="Illustration">
+        <div class="text">
+            <h2>Hidden Convex Optimization Blog Post
+			</h2>
+			<p>Peer-reviewed blog post published in <a href="https://iclr-blogposts.github.io/2024/blog/hidden-convex-relu">ICLR 2024</a>. It explains the link betwwen ReLU Neural Networks and Convex Optimisation. Graphics and training a Neural Network with a Convex formulation are reproducible using a <a href="https://iclr-blogposts.github.io/2024/assets/html/2024-05-07-hidden-convex-relu/hidden-convex-relu.html">Jupyter Notebook (html)</a> <a href="https://iclr-blogposts.github.io/2024/assets/html/2024-05-07-hidden-convex-relu/hidden-convex-relu.ipynb">(.ipynb)</a>
+			</p>
+        </div>
+	</div>
+</div>
+
+
+<div class="box-container">
+	<div class="content-box">
+        <img src="second.png" alt="Illustration">
+        <div class="text">
+            <h2>MCTS PSPACE Solver
+			</h2>
+			<p>Conversion of a PSPACE (harder than NP) program to a game tree, which is then solved by my implementation of Monte Carlo Tree Search in OCaml.<br />
+
+			This M2 Internship was Supervised by Abdallah Saffidine, Frédéric Maris et Andreas Herzig.<br /> The report can be found <a href="report_dlpa_finale.pdf">here.</a>
+
+			Code is shared on <a href="https://github.com/vmerckle/MCTS-for-DL-PA">GitHub</a>
+			</p>
+        </div>
+	</div>
+</div>
+
+<div class="box-container">
+	<div class="content-box">
+        <img src="third.png" alt="Illustration">
+        <div class="text">
+            <h2>GPU Memory Optimization by SAT solving
+			</h2>
+			<p>
+			Describing the problem of optimal GPU memory usage as a NP problem (SAT), developping strategies to find an approximate solution using C++ SAT-solver Glucose. <br />
+
+Supervised by Jean Marie-Lagniez.<br />
+			Code is shared on <a href="https://github.com/vmerckle/GPU-Optimal-SAT">GitHub</a>
+			</p>
+        </div>
+	</div>
+</div>
